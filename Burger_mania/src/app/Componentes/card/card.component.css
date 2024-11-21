@@ -1,0 +1,102 @@
+/* Estilo para o card */
+.example-card {
+    width: 300px;                /* Largura padrão do card */
+    border: 1px solid #ddd;      /* Borda para o card */
+    border-radius: 8px;          /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;          /* Centraliza o conteúdo do card */
+    padding: 20px;               /* Espaçamento interno */
+    margin: 10px auto;           /* Margem automática para centralizar o card */
+  }
+  
+  /* Estilo para a imagem */
+  .example-card #img-card {
+    display: block;              /* Faz a imagem respeitar o alinhamento do card */
+    margin: 0 auto 20px;         /* Centraliza a imagem e adiciona espaçamento abaixo */
+    width: 194px;                /* Largura fixa */
+    height: 155px;               /* Altura fixa */
+    object-fit: cover;           /* Ajusta a imagem sem distorção */
+    border-radius: 8px;          /* Cantos arredondados da imagem */
+  }
+  
+  /* Estilo para o título */
+  .example-card mat-card-title {
+    font-family: 'Sans-serif';   /* Fonte Sans-serif */
+    font-size: 30px;            /* Tamanho da fonte padrão */
+    color: #521D16;             /* Cor do texto */
+    margin: 10px 0;             /* Espaçamento acima e abaixo */
+  }
+  
+  /* Estilo para o conteúdo (parágrafo) */
+  .example-card mat-card-content p {
+    font-family: 'Sans-serif';   /* Fonte Sans-serif */
+    font-size: 20px;            /* Tamanho da fonte padrão */
+    color: #000000;             /* Cor do texto */
+    margin: 10px 0;             /* Espaçamento acima e abaixo */
+    line-height: 1.5;           /* Altura da linha */
+  }
+  
+  /* Media Queries para Responsividade */
+  
+  /* Para telas pequenas (até 600px) */
+  @media (max-width: 600px) {
+    .example-card {
+      width: 90%;                /* Ocupa 90% da largura da tela */
+      padding: 15px;             /* Reduz o espaçamento interno */
+    }
+  
+    .example-card #img-card {
+      width: 150px;              /* Reduz a largura da imagem */
+      height: 120px;             /* Reduz a altura da imagem */
+    }
+  
+    .example-card mat-card-title {
+      font-size: 24px;           /* Reduz o tamanho do título */
+    }
+  
+    .example-card mat-card-content p {
+      font-size: 16px;           /* Reduz o tamanho do texto do parágrafo */
+    }
+  }
+  
+  /* Para telas médias (601px a 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .example-card {
+      width: 260px;              /* Reduz a largura do card */
+      padding: 18px;             /* Ajusta o espaçamento interno */
+    }
+  
+    .example-card #img-card {
+      width: 170px;              /* Ajusta a largura da imagem */
+      height: 135px;             /* Ajusta a altura da imagem */
+    }
+  
+    .example-card mat-card-title {
+      font-size: 26px;           /* Ajusta o tamanho do título */
+    }
+  
+    .example-card mat-card-content p {
+      font-size: 18px;           /* Ajusta o tamanho do texto do parágrafo */
+    }
+  }
+  
+  /* Para telas grandes (acima de 1024px) */
+  @media (min-width: 1025px) {
+    .example-card {
+      width: 300px;              /* Mantém a largura original */
+    }
+  
+    .example-card #img-card {
+      width: 194px;              /* Mantém as dimensões da imagem */
+      height: 155px;
+    }
+  
+    .example-card mat-card-title {
+      font-size: 30px;           /* Mantém o tamanho original do título */
+    }
+  
+    .example-card mat-card-content p {
+      font-size: 20px;           /* Mantém o tamanho original do texto do parágrafo */
+    }
+  }
+  

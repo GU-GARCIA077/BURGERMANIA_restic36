@@ -1,0 +1,11 @@
+.center {
+    display: table-cell;
+    max-width: 600px;
+    width: 100%; /* Garante que o conteúdo da célula ocupe toda a largura disponível */
+    text-align: center; /* Centraliza os botões */
+    display: flex; /* Usando flexbox para alinhar os botões */
+    justify-content: center; /* Centraliza os botões no container */
+    gap: 16px; /* Espaço entre os botões */
+    margin-left: auto;
+    margin-right: auto;
+}

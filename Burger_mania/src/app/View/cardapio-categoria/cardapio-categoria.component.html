@@ -1,0 +1,10 @@
+<section id="texto">
+    <div class="container-fluid">
+        <h1>Cardápio</h1>
+    </div>
+</section>
+<section id="lado" >
+    <div class="container-fluid">
+        <app-card *ngFor="let prod of prodListCat" [prodData]="prod"></app-card>
+    </div>
+</section>

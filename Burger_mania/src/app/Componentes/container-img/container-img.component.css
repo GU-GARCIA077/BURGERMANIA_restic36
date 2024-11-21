@@ -1,0 +1,46 @@
+#burguer {
+    width: 836px;
+    height: 442px;
+    margin-top: 100px;
+    
+    max-width: 100%;  /* A imagem pode ocupar até 100% da largura do contêiner */
+    height: auto;     /* Mantém a proporção da imagem */
+}
+
+/* Estilo do contêiner da imagem */
+.center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  /* Garante que a imagem fique centralizada */
+    max-width: 100%;
+}
+
+/* Ajuste para telas pequenas (ex: smartphones) */
+@media (max-width: 576px) {
+    #burguer {
+        width: 80%;      /* A imagem ocupa 80% da largura da tela */
+        margin-left: 0;  /* Remove o deslocamento da margem esquerda */
+        margin-top: 70px; /* Ajuste o espaço superior para telas menores */
+    }
+}
+
+/* Ajuste para telas médias (ex: tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    #burguer {
+        width: 90%;      /* A imagem ocupa 90% da largura da tela */
+        margin-left: 0;  /* Remove o deslocamento da margem esquerda */
+        margin-top: 70px; /* Ajuste o espaço superior para tablets */
+    }
+}
+
+/* Ajuste para telas grandes (ex: desktops) */
+@media (min-width: 769px) {
+    #burguer {
+        width: 836px;    /* A imagem mantém o tamanho original */
+        height: 442px;   /* A altura permanece fixa */
+        margin-top: 90px;
+       /* Manter a margem conforme seu código original */
+    }
+}
